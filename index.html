@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desk Organizer Customizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customize Your Desk Organizer</h1>
+        
+        <form id="customization-form">
+            <label for="compartments">Number of Compartments:</label>
+            <select id="compartments" name="compartments">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <label for="cable-organizer">Include Cable Organizer:</label>
+            <input type="checkbox" id="cable-organizer" name="cable-organizer">
+
+            <label for="logo-upload">Upload Logo for Engraving:</label>
+            <input type="file" id="logo-upload" name="logo-upload" accept="image/*">
+
+            <button type="submit">Preview Design</button>
+        </form>
+
+        <div id="preview">
+            <h2>Preview</h2>
+            <div id="desk-organizer-preview">
+                <!-- Preview content will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
