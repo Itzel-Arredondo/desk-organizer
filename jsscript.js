@@ -1,5 +1,5 @@
 document.getElementById('customization-form').addEventListener('submit', function(e) {
-    e.preventDefault();  // Prevents the form from actually submitting and refreshing the page
+    e.preventDefault();  // Prevent the form from actually submitting to the server
 
     // Get selected values
     const compartments = document.getElementById('compartments').value;
@@ -11,8 +11,9 @@ document.getElementById('customization-form').addEventListener('submit', functio
     document.getElementById('preview-engraving').textContent = engravingFile;
     document.getElementById('preview-cable-holder').textContent = cableHolder === 'yes' ? 'Yes' : 'No';
 
-    // Hide the form and show the thank-you message
+    // Hide the form and preview, and show the thank-you message
     document.getElementById('customization-form').style.display = 'none';  // Hide the form
     document.getElementById('preview-section').style.display = 'none';  // Hide the preview section
     document.getElementById('thank-you-message').style.display = 'block';  // Show the thank-you message
 });
+
